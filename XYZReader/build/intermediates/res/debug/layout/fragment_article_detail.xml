@@ -169,32 +169,48 @@
 
 -->
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/app_bar"
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
         android:layout_width="match_parent"
         android:layout_height="90dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:contentInsetStart="@dimen/four"
-        android:background="?colorPrimary"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:layout_scrollFlags="scroll|enterAlways"
         android:visibility="visible"
-
+        android:background="?colorPrimary"
+        android:fitsSystemWindows="true"
         >
 
-        <ImageButton
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            android:id="@+id/action_up"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:background="?colorPrimary"
-            android:layout_gravity="bottom|left"
-            android:layout_marginTop="@dimen/fab_margin"
-            android:contentDescription="@string/up"
-            android:src="@drawable/ic_arrow_back"
-            />
 
-    </android.support.v7.widget.Toolbar>
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentInsetStart="@dimen/four"
+            android:background="?colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:visibility="visible"
+
+            >
+
+            <ImageButton
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:id="@+id/action_up"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="?colorPrimary"
+                android:layout_gravity="bottom|left"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:contentDescription="@string/up"
+                android:src="@drawable/ic_arrow_back"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
 
 
 
